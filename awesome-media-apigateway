@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: awesome-media-apigateway
+    
+server:
+  port: 9999
+  
+management:
+  security:
+    enabled: false      
+
+zuul:
+  ignored-services: "*"
+  routes :
+    awesome-media-backend :
+     
